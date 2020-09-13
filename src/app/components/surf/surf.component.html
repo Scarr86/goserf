@@ -1,0 +1,39 @@
+<app-title [title]="'Surf'"></app-title>
+<app-subtitle class="subtitle" subtitle="Current location">
+	{{ curBeach?.state }} <span>|</span> {{ curBeach?.country }}
+</app-subtitle>
+
+
+
+
+<div class="map">
+	<img class="map__img" src="../../../assets/images/world-map.svg" alt="worl map" />
+	<img class=" map__location-icon" src="../../../assets/images/mini-marker.svg" alt="">
+
+	<app-surf-dot *ngFor="let beach of beachs; let i = index" [class]="'dot ' + 'dot' + i" [beach]="beach"
+		(click)="slickModal.slickGoTo(i)"></app-surf-dot>
+	<div class="location">
+		<span>
+			{{ curBeach?.coordinates.N | number: "2.4" }} N
+			{{ curBeach?.coordinates.W | number: "2.4" }} W
+		</span>
+	</div>
+</div>
+<div class="carousel">
+	<app-arrows class="arrows" (next)="slickModal.slickNext()" (prev)="slickModal.slickPrev()"></app-arrows>
+
+	<ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" (beforeChange)="beforeChange($event)"
+		(init)="slickInit($event)">
+		<app-surf-slide class="slide" ngxSlickItem *ngFor="let beach of beachs; let i = index; trackBy: trackBySlide"
+			[beach]="beach" [active]="slickModal?.currentIndex == i">
+		</app-surf-slide>
+	</ngx-slick-carousel>
+</div>
+
+<!-- <button (click)="offset = offset - 1">offset -</button>
+<button (click)="offset = offset + 1">offset +</button>
+
+<button (click)="addSlide()">Add</button>
+<button (click)="removeSlide()">Remove</button>
+<button (click)="slickModal.slickGoTo(3)">slickGoto 2</button>
+<button (click)="slickModal.unslick()">unslick</button> -->

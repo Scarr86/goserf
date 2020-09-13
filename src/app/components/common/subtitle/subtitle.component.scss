@@ -1,0 +1,44 @@
+:host {
+   display: block;
+}
+
+.overhead {
+   display: inline-block;
+   font-size: 22px;
+   line-height: 32px;
+   opacity: .5;
+   margin-bottom: 8px;
+   letter-spacing: 7.33333px;
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+   }
+
+   &.left {
+      padding-right: 103px;
+
+      &::before {
+         right: 0;
+      }
+   }
+
+   &.right {
+		padding-left: 103px;
+		
+
+      &::before {
+         left: 0;
+      }
+   }
+}
+
+.subtitle {
+   line-height: 1.075;
+   font-weight: 800;
+}

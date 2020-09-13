@@ -1,0 +1,292 @@
+{
+	"beachs": [
+		{
+			"name": "Sunset Beach",
+			"country": "USA",
+			"state": "Hawaii",
+			"bgi": "assets/images/surf-slide-bg5.jpg",
+			"coordinates":{
+				"N": 34.0327900,
+				"W": -118.6884200
+			},
+			"shores": [
+				{
+					"title": "North Shore",
+					"bgi": "assets/images/header-bg1.jpg"
+				},
+				{
+					"title": "South Shore",
+					"bgi": "assets/images/header-bg3.jpg"
+				},
+				{
+					"title": "West Shore",
+					"bgi": "assets/images/header-bg4.jpg"
+				},
+				{
+					"title": "East Shore",
+					"bgi": "assets/images/header-bg5.jpg"
+				}
+			],
+			"condition": {
+				"surf": {
+					"max": 13,
+					"min": 9
+				},
+				"tide": 2.3,
+				"wind": 4
+			}
+		},
+		{
+			"name": "Malibu Beach",
+			"country": "USA",
+			"state": "California",
+			"bgi": "assets/images/surf-slide-bg1.jpg",
+			"coordinates":{
+			"N": 34.0327900,
+			"W": -118.6884200
+		},
+			"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+			],
+			"condition": {
+			"surf": {
+				"max": 13,
+				"min": 9
+			},
+			"tide": 2.3,
+			"wind": 4
+			}
+		},
+		{
+		"name": "Destroyer",
+		"country": "Dominicana",
+		"state": "Haïti",
+		"bgi": "assets/images/surf-slide-bg6.jpg",
+		"coordinates":{
+			"N": 34.0327900,
+			"W": -118.6884200
+		},
+		"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+		],
+		"condition": {
+			"surf": {
+				"max": 13,
+				"min": 9
+			},
+			"tide": 2.3,
+			"wind": 4
+		}
+		},
+		{
+		"name": "Arpoador",
+		"country": "Brazil",
+		"state": "Rio De Janeiro",
+		"bgi": "assets/images/surf-slide-bg7.jpg",
+		"coordinates":{
+			"N": 34.0327900,
+			"W": -118.6884200
+		},
+		"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+		],
+		"condition": {
+			"surf": {
+				"max": 13,
+				"min": 9
+			},
+			"tide": 2.3,
+			"wind": 4
+		}
+		},
+		{
+		"name": "Vieux Boucau",
+		"country": "France",
+		"state": "Hossegor",
+		"bgi": "assets/images/surf-slide-bg4.jpg",
+		"coordinates":{
+			"N":47.00,
+			"W":2.00
+		},
+		"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+		],
+		"condition": {
+			"surf": {
+				"max": 13,
+				"min": 8
+			},
+			"tide": 2.3,
+			"wind": 5
+		}
+		},  
+		{
+		"name": "Round Rock",
+		"country": "Peru",
+		"state": "Lima",
+		"bgi": "assets/images/surf-slide-bg8.jpg",
+		"coordinates":{
+			"N":47.00,
+			"W":2.00
+		},
+		"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+		],
+		"condition": {
+			"surf": {
+				"max": 13,
+				"min": 8
+			},
+			"tide": 2.3,
+			"wind": 5
+		}
+		},  
+		{
+			"name": "Cloud Nine",
+			"country": "Philippines",
+			"state": "Siargao",
+			"bgi": "assets/images/surf-slide-bg3.jpg",
+			"coordinates":{
+			"N":9.52,
+			"W":126.03
+		},
+			"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+			],
+			"condition": {
+			"surf": {
+				"max": 14,
+				"min": 8
+			},
+			"tide": 1.3,
+			"wind": 1
+			}
+		},
+		{
+			"name": "Airlie Beach",
+			"country": "Australia",
+			"state": "Queensland",
+			"bgi": "assets/images/surf-slide-bg2.jpg",
+			"coordinates":{
+			"N":-20.1605,
+			"W":148.4255
+		},
+			"shores": [
+			{
+				"title": "North Shore",
+				"bgi": "assets/images/header-bg1.jpg"
+			},
+			{
+				"title": "South Shore",
+				"bgi": "assets/images/header-bg3.jpg"
+			},
+			{
+				"title": "West Shore",
+				"bgi": "assets/images/header-bg4.jpg"
+			},
+			{
+				"title": "East Shore",
+				"bgi": "assets/images/header-bg5.jpg"
+			}
+			],
+			"condition": {
+			"surf": {
+				"max": 12,
+				"min": 10
+			},
+			"tide": 2.1,
+			"wind": 2
+			}
+		}
+	]
+ }

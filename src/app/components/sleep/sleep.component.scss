@@ -1,0 +1,60 @@
+@import "../../../var";
+.info {
+
+   display: flex;
+	justify-content: space-around;
+	margin-bottom: 66px;
+	
+}
+
+ .col {
+   position: relative;
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 36px;
+   min-height: 200px;
+	padding-left: 40px;
+	letter-spacing: 6px;
+	flex: 1 1 300px;
+
+   & > span {
+      display: block;
+      position: absolute;
+		left: 0;
+		top: 0;
+      white-space: nowrap;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      opacity: 0.5;
+      transform-origin: left top;
+      transform: rotate(-90deg) translateX(-100%);
+
+      &:nth-of-type(2) {
+			position: relative;
+			top: -10px;
+         font-size: 14px;
+         line-height: 36px;
+         letter-spacing: 5.25px;
+			opacity: 0.75;
+			transform: none;
+			text-align: right;
+			max-width: 50%;
+      }
+   }
+}
+
+.control{
+	color: $primary;
+	background: none;
+	border: none;
+	font-size: 40px;
+	line-height: initial;
+	padding: 0;
+	outline: none;
+	opacity: 1;
+	cursor: pointer;
+	& + .control{
+		margin-left: 16px;
+	}
+}

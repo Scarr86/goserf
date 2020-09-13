@@ -1,0 +1,34 @@
+<app-title title="sleep"></app-title>
+
+<app-arrows class="arrows" (next)="next()" (prev)="prev()"></app-arrows>
+<div class="info">
+	<div class="col">
+		<span>Resort</span>
+		{{resorts[indxResort]?.name}}
+	</div>
+	<div class="col">
+		<span># of Nights</span>
+		{{nights | number}} Nights
+		<span>
+			<button (click)="setNights(-1)" class="control">-</button>
+			<button (click)="setNights(1)" class="control">+</button>
+		</span>
+	</div>
+	<div class="col">
+		<span># of Guests</span>
+		 {{guests | number}} Guests
+		<span>
+			<button (click)="setGuests(-1)" class="control">-</button>
+			<button (click)="setGuests(1)" class="control">+</button>
+		</span>
+	</div>
+	<div class="col">
+		<span>Pricing</span>
+		$ {{getPrice()  | number}} USD
+		<span>Per Night</span>
+	</div>
+</div>
+
+<div class="btn-box">
+	<a class="btn" href="#"> Book <span>Stay</span> </a>
+</div>

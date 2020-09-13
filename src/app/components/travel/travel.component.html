@@ -1,0 +1,50 @@
+<app-title [title]="'travel'"></app-title>
+<ngx-slick-carousel class="carousel" 
+	#slickModal="slick-carousel" 
+	[config]="slideConfig" 
+	(afterChange)="afterChange()" 
+	(init)="slickInit($event)">
+
+	<div class="slide" ngxSlickItem *ngFor="let airline of airlines; trackBy: trackBySlide">
+
+		<div class="box">
+			<img class="slide-bg" src="{{airline?.bgi}}" alt="airlineimg">
+			<img class="fly" [@fly]="fly" (@fly.done)="done($event);" src="{{airline.fly}}" alt="fly">
+			<div class="subtitle">
+				<app-subtitle [subtitle]="'shore'">
+					{{beach?.name}} <span>|</span> {{beach?.country}}
+				</app-subtitle>
+				<app-arrows class="arrows" (next)="next()" (prev)="prev()"></app-arrows>
+			</div>
+			<app-subtitle class="description" subtitle="Airline" orientation="left">
+				{{airline?.name}}
+				<img class="logo" src="{{airline?.logo}}" alt="airlinelogo">
+			</app-subtitle>
+		</div>
+
+		<div class="info">
+			<div class="col">
+				<span>Destination</span>
+				<div [innerHtml]="airline.destination | newline "></div>
+			</div>
+			<div class="col">
+				<span>Distance</span>
+				{{airline.distance | number}} miles
+			</div>
+			<div class="col">
+				<span>Travel Time</span>
+				<div [innerHtml]="airline.time | time"></div>
+			</div>
+			<div class="col">
+				<span>Pricing</span>
+				$ {{airline.price | number}} USD
+				<!-- {{airline.price  | currency:'USD':'symbol-narrow':'.0-0'}} USD -->
+				<span>Round Trip</span>
+			</div>
+		</div>
+		<div class="btn-box">
+			<a class="btn" href="#"> Book <span>Flight</span> </a>
+		</div>
+	</div>
+
+</ngx-slick-carousel>

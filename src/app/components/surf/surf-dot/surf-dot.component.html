@@ -1,0 +1,42 @@
+<!-- <span *tooltip="toolTip is active context: beach" class="circle"> -->
+<!-- <span [tooltip]="toolTip" [context]="beach" class="circle"> -->
+<span #circle class="circle" [class.active]="active"></span>
+<!-- <ng-container *ngTemplateOutlet="active ? toolTip : ''; context: {$implicit: beach}"></ng-container> -->
+
+
+<div #toolTip  class="content"  [class.active]="active">
+	<div class="row">
+		<div class="name">
+			{{beach?.name}}
+		</div>
+		<a href="#">
+			<img class="arrow" src="../../../../assets/images/arrow-right.svg" alt="arrow-right">
+		</a>
+	</div>
+	<div class="row">
+		<div class="country">{{beach?.country}}</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<img src="../../../../assets/images/surf-icon.svg" alt="surf">
+			<div class="condition">
+				{{beach?.condition.surf.min}} - {{beach?.condition.surf.max}}
+			</div>
+			<div class="unit">Surf (FT)</div>
+		</div>
+		<div class="col">
+			<img src="../../../../assets/images/tide-icon.svg" alt="tide">
+			<div class="condition">
+				{{beach?.condition.tide}}
+			</div>
+			<div class="unit">Tide (FT)</div>
+		</div>
+		<div class="col">
+			<img src="../../../../assets/images/wind-icon.svg" alt="wind">
+			<div class="condition">
+				{{beach?.condition.wind}} SE
+			</div>
+			<div class="unit">Wind (KTS)</div>
+		</div>
+	</div>
+</div>

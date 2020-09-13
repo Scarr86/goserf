@@ -1,0 +1,41 @@
+<div class="logo">
+	<a href="#">
+		<img src="assets/images/logo.svg" alt="logo">
+	</a>
+</div>
+<nav class="menu">
+	<ul class="menu__list">
+		<li>
+			<a scrollTo="surf" href="#">
+				<img src="assets/images/nav-icon-1.svg" alt=""><span>Surf</span>
+			</a>
+		</li>
+		<li>
+			<a scrollTo="travel" href="#">
+				<img src="assets/images/nav-icon-2.svg" alt=""><span>Travel</span>
+			</a>
+		</li>
+		<li>
+			<a scrollTo="sleep" href="#">
+				<img src="assets/images/nav-icon-3.svg" alt=""><span>Sleep</span>
+			</a>
+		</li>
+		<li>
+			<a scrollTo="shop" href="#">
+				<img src="assets/images/nav-icon-4.svg" alt=""><span>Shop</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div class="search">
+	<a href="#">
+		<img src="assets/images/search.svg" alt="search">
+	</a>
+</div>
+<div class="date">
+	{{date | date:"dd"}}
+	<span>{{date | date:"MM"}} | {{date | date:"yyyy"}}</span>
+</div>
+<div class="location">
+	{{(beach$ | async).country}}
+</div>

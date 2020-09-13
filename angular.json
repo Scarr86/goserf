@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/normalize.css/normalize.css",
+              "node_modules/slick-carousel/slick/slick.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           },
           "configurations": {
             "production": {

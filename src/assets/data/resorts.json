@@ -1,0 +1,46 @@
+{
+	"resorts":[
+		{
+			"country": "USA",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 13.3 
+		},
+		{
+			"country": "Dominicana",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 14.5 
+		},
+		{
+			"country": "Brazil",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 16.5 
+		},
+		{
+			"country": "France",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 19.9 
+		},
+		{
+			"country": "Peru",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 12.1 
+		},
+		{
+			"country": "Philippines",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 17.5 
+		},
+		{
+			"country": "australia",
+			"name":  "auberge" ,
+			"rating": 5,
+			"price": 17.5 
+		}
+	]
+ }

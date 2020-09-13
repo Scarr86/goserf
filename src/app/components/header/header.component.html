@@ -1,0 +1,42 @@
+<!-- (init)="slickInit($event)"
+(afterChange)="afterChange($event)"
+(init)="afterChange($event)"
+(breakpoint)="breakpoint($event)"
+(beforeChange)="beforeChange($event)" -->
+
+<div class="title">go surf</div>
+
+<app-header-map class="map"></app-header-map>
+
+<aside class="aside">
+	<app-header-aside></app-header-aside>
+</aside>
+
+<app-arrows class="arrows" (next)="slickModal.slickNext()" (prev)="slickModal.slickPrev()"></app-arrows>
+<!-- [style.backgroundImage]="'url(' + shore.bgi + ')'" -->
+<ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+	<app-header-slide class="slide" ngxSlickItem [shore]="shore"
+		*ngFor="let shore of beach?.shores; trackBy: trackBySlide">
+	</app-header-slide>
+</ngx-slick-carousel>
+
+<div class="pagination">
+	<div class="pagination__item" *ngFor="let shore of beach?.shores; index as i" (click)="slickModal.slickGoTo(i)"
+		[class.active]="slickModal.currentIndex == i">
+		<span> {{ i + 1 | number: "2.0" }} </span>
+		<span>{{ shore?.title }}</span>
+	</div>
+</div>
+
+<div scrollTo="surf" class="arrow-down">
+	<div class=" fadeInDown">
+		<img src="assets/images/arrows-down.svg" alt="" />
+	</div>
+</div>
+
+<!--
+	<button (click)="addSlide()">Add</button>
+	<button (click)="removeSlide()">Remove</button>
+	<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+	<button (click)="slickModal.unslick()">unslick</button> 
+-->

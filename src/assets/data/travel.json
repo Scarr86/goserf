@@ -1,0 +1,74 @@
+{
+	"airline":[
+		{
+			"name": "virgin usa",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"USA",
+			"distance": 7365,
+			"time": 1385,
+			"price": 1290
+		},
+		{
+			"name": "virgin dominicana",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"dominicana",
+			"distance": 3025,
+			"time": 1285,
+			"price": 1110
+		},
+		{
+			"name": "virgin brazil",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"brazil",
+			"distance": 5.165,
+			"time": 1025,
+			"price": 2990
+		},
+		{
+			"name": "virgin france",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"france",
+			"distance": 8365,
+			"time": 1185,
+			"price": 1234
+		},
+		{
+			"name": "virgin peru",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"peru",
+			"distance": 2065,
+			"time": 1335,
+			"price": 4321
+		},
+		{
+			"name": "virgin philippines",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"philippines",
+			"distance": 5065,
+			"time": 1285,
+			"price": 1190
+		},
+		{
+			"name": "virgin australia",
+			"logo": "assets/images/airline-logo.png",
+			"bgi": "assets/images/travel-slide-bg.png",
+			"fly": "assets/images/fly-bg.png",
+			"destination":"queensland australia",
+			"distance": 9065,
+			"time": 1325,
+			"price": 1190
+		}
+	]
+ }
