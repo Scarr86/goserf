@@ -47,7 +47,7 @@ export class SurfComponent implements OnInit, AfterViewInit {
     this.beachService.currentBeach.subscribe(curBeach => {
       this.curBeach = curBeach;
       //   this.cdr.markForCheck();
-    });
+	});
   }
   ngAfterViewInit() {
     this.cdr.detectChanges();

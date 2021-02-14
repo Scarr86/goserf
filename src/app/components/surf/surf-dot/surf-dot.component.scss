@@ -1,28 +1,28 @@
 @import "../../../../var";
 
-:host {
-   display: inline-block;
-   text-align: center;
-   position: relative;
-}
+// :host {
+//    display: inline-block;
+//    text-align: center;
+//    position: relative;
+// }
 
-.content {
+.tooltip {
    width: 283px;
    position: absolute;
    flex-direction: column;
    border-radius: 6px;
    background-color: rgba(#0f1010, .7);
    padding: 28px 32px 31px;
-   // opacity: 0;
+   opacity: 0;
    display: flex;
    visibility: hidden;
 
-   &.active {
+//    &.active {
       z-index: 1;
       visibility: visible;
       transition: opacity .5s;
-      // opacity: 1;
-   }
+      opacity: 1;
+//    }
 
    img {
       min-height: 25px;

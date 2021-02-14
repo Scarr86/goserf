@@ -24,6 +24,7 @@ import { ScrollToDirective } from "./directive/scrollto.directive";
 import { SurfDotComponent } from "./components/surf/surf-dot/surf-dot.component";
 import { TimePipe } from "./components/travel/time.pipe";
 import { NewLinePipe } from './components/travel/newline';
+import { TooltipDirective } from './directive/tooltip.directive';
 
 function loadBeachs(beachService: BeachService) {
   return () => beachService.load();
@@ -48,6 +49,7 @@ function loadBeachs(beachService: BeachService) {
     SurfDotComponent,
 	 TimePipe,
 	 NewLinePipe,
+	 TooltipDirective,
   ],
   imports: [
     BrowserModule,

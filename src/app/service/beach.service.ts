@@ -1,14 +1,9 @@
 import { Injectable } from "@angular/core";
-import {
-  BehaviorSubject,
-} from "rxjs";
+import { BehaviorSubject, of } from "rxjs";
 import Beach, { Shore } from "../models/beach.model";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
-import {
-  pluck,
-} from "rxjs/operators";
+import { pluck, map, catchError } from "rxjs/operators";
 import { environment } from "src/environments/environment";
-
 
 // new гаваи  доминикана  бразилия перу
 @Injectable({ providedIn: "root" })
@@ -23,20 +18,21 @@ export class BeachService {
 
   constructor(private http: HttpClient) {}
 
-  load(): Promise<any> {
-    return this.http
-      .get(this.url)
-      .pipe(pluck<Object, Beach[]>("beachs"))
-      .toPromise()
-      .then(data => {
-			// this.beachs = [...data, ...data.map(b => Object.assign({}, b))];
-			this.beachs = data;
-			this._currentBeach.next(this.beachs[this._currentIndex]);
+  load() {
+    return this.http.get(this.url).pipe(
+      pluck<Object, Beach[]>("beachs"),
+      map((data) => {
+        this.beachs = data;
+        this._currentBeach.next(this.beachs[this._currentIndex]);
+      }),
+      catchError((err) => {
+        console.log(err);
+        return of(err);
       })
-      .catch(err => Promise.resolve(err));
+    ).toPromise()
   }
-  isCurrent(beach:Beach):boolean{
-	  return beach === this._currentBeach.getValue();
+  isCurrent(beach: Beach): boolean {
+    return beach === this._currentBeach.getValue();
   }
 
   beachChange(beach: Beach) {
