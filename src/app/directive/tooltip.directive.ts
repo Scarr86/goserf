@@ -92,6 +92,7 @@ export class TooltipDirective {
     this.isShow = !this.isShow;
   }
 
+  
   addTooltip() {
     const tooltipEl = this.tooltipView.rootNodes[0] as HTMLElement;
     const el = (this.tpl.elementRef.nativeElement as HTMLElement)
